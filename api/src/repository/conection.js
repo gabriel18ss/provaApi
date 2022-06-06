@@ -7,3 +7,4 @@ const con = await MYSQL.createConnection({
     databse:process.env.MYSQL_db
 })
 export {con}
+

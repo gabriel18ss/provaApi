@@ -4,7 +4,7 @@ export async function inserirpet(pet){
     const comando=
     `INSERT INTO id_pet(id_pet, nm_pet)
     VALUES(?,?)`
-    const [resp = await con.query(comando, pet.nome,)]
+    const resp = await con.query[comando, pet.nome]
     return pet;
 }
 

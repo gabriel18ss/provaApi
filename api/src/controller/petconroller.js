@@ -1,7 +1,7 @@
 import {router} from 'express'
 const server = router();
 
-server.post ('pet' , async(req,resp) => {
+server.post ('/pet' , async(req,resp) => {
     try{
         const petnovo = req.body;
         const petinserido = await inserirpet(novopet);
@@ -13,7 +13,12 @@ server.post ('pet' , async(req,resp) => {
         })
     }
 });
-server.get ('pet/id:' , async(req,resp) =>{
+
+
+
+
+
+server.get ('/pet/id:' , async(req,resp) =>{
     try{
         const id = Number (rq, params,id);
         const resposta = await inserirnovo(id)
