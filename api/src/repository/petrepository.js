@@ -1,18 +1,23 @@
-import {con} from './conection.js'
+import { con } from './conection.js';
 
-export async function inserirpet(pet){
-    const comando=
-    `INSERT INTO id_pet(id_pet, nm_pet)
-    VALUES(?,?)`
-    const resp = await con.query[comando, pet.nome]
-    return pet;
+export async function pet ( pet ){
+    const comando = 
+    `insert into tb_pet(nm_pet)
+	             value(?);
+    `
+    const resposta  = await con.query(comando, [pet.nome]);
+    
+    return resposta;
 }
 
-export async function listarpet(id){
-    const comando=
-    'SELECT id_pet      id'
-        'nm_pet         nome'
-        'from tb_pet'
-        const [ linhas] = await con.query
-        return pet;
+
+export async function consultarPet(){
+    const comando = 
+    `select id_pet      id,
+            nm_pet      nome
+        from tb_pet;
+    `
+
+    const resposta = await con.query(comando);
+    return resposta;
 }
