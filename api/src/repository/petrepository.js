@@ -1,4 +1,4 @@
-import { con } from './conection.js';
+import { con } from './connection.js';
 
 export async function pet ( pet ){
     const comando = 

@@ -1,4 +1,4 @@
-import { pet,consultarPet } from '../repository/petrepository.js';
+import { pet,consultarPet } from '../repository/petRepository.js';
 
 import { Router } from 'express'
 

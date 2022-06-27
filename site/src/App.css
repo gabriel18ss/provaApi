@@ -1,18 +1,22 @@
 .App {
+  
   margin: 30px;
 }
 
 .text{
+  text-align: center;
   margin-bottom: 30px;
 }
 
 .divtb{
+  text-align: center;
   display: block;
   width: 600px;
   border-radius: 20px;
 }
 
 .tabela{
+  
   border: 1px solid black;
   width: 100%;
   border-collapse: collapse;
@@ -20,10 +24,12 @@
 }
  
 table{
+  
   border-radius: 20px;
 }
 
 tbody{
+  
   background-color: rgb(255, 255, 255);
 }
 
@@ -32,5 +38,6 @@ td{
 }
 
 .cabeca{
+  
   background-color: rgba(245, 245, 220, 0.664);
 }
